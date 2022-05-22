@@ -16,7 +16,7 @@ Since this can vary from organisation to organisation, it's usually not easy to 
 To use this library, import it:
 
 ```go
-import "gitlab.com/zephinzer/go-commander"
+import "github.com/zephinzer/go-commander"
 ```
 
 ## Basic/universal usage

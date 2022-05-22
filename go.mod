@@ -1,4 +1,4 @@
-module gitlab.com/zephinzer/go-commander
+module github.com/zephinzer/go-commander
 
 go 1.18
 
