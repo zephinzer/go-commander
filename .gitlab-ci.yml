@@ -26,8 +26,11 @@ unit:
   stage: test
   dependencies: [deps]
   artifacts:
+    expire_in: 2 days
     reports:
-      cobertura: reports/coverage.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: reports/coverage.xml
   before_script:
     - apk add g++
     - go get github.com/boumenot/gocover-cobertura
