@@ -78,6 +78,7 @@ func (c *command) Execute() output {
 	cmd.Path = fullPath
 
 	// set arguments
+	cmd.Args = []string{fullPath}
 	for _, param := range c.Params {
 		cmd.Args = append(cmd.Args, param.Label)
 		if param.Value != nil {
