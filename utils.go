@@ -23,9 +23,10 @@ import (
 //     Execute()
 func NewCommand(invocation string) Command {
 	cmd := command{
-		Invocation: invocation,
-		Stdout:     []io.Writer{},
-		Stderr:     []io.Writer{},
+		Environment: map[string]string{},
+		Invocation:  invocation,
+		Stdout:      []io.Writer{},
+		Stderr:      []io.Writer{},
 	}
 	return &cmd
 }
